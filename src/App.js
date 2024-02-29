@@ -42,7 +42,6 @@ const App = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          
           title: postTitle,
           body: postBody,
           date_created: format(new Date(), "MMMM dd, yyyy pp"),
