@@ -1,0 +1,124 @@
+:root {
+  --primaryColor: #0099ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: var(--primaryColor);
+  height: 10vmin;
+  color: white;
+  font-size: 4vmin;
+  padding: 2vmin;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 5vmin;
+}
+
+nav {
+  width: 50%;
+  font-size: 3.5vmin;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+li {
+  cursor: pointer;
+}
+.welcome {
+  color: var(--primaryColor);
+  font-size: 6vw;
+  text-align: center;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5vmin;
+  align-items: center;
+  height: 90vh;
+  background: url("https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg");
+  background-color: grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 3vmin;
+}
+.section1 p {
+  color: orange;
+  text-align: center;
+  font-size: 3vw;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.section1 button {
+  width: fit-content;
+  padding: 1vmin;
+  height: 6vmin;
+  border: none;
+  background-color: orange;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.section1 button:hover,
+.section1 button:focus {
+  color: white;
+  background-color: orangered;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(4vmin);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section2 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 3vmin;
+  background: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1zNy1qZy0wMDJhLmpwZw.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 3vmin;
+}
+.section2 div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+}

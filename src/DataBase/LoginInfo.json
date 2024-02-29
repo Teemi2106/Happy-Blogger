@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "username": "Casper",
+      "password": "password123",
+      "email": "casper@happyblogger.com",
+      "id": "30ed"
+    },
+    {
+      "username": "Timmy",
+      "password": "pass456",
+      "email": "timmy@happyblogger.com",
+      "id": "a87d"
+    },
+    {
+      "username": "admin",
+      "password": "adminpass",
+      "email": "admin@adminblogger.com",
+      "id": "62f6"
+    }
+  ],
+  "Blogposts": [
+    {
+      "id": "5d93",
+      "title": "My First Blog Site",
+      "body": "I'm ecstatic to start my react Journey👨‍💻👨‍💻",
+      "date_created": "February 29, 2024 12:39:19 PM"
+    },
+    {
+      "id": "d46e",
+      "title": "Macbook vs HP ",
+      "body": "I feel macbooks are for work only but HP's are for work and play.\nPersonally I love HP's cuz I play games a lot",
+      "date_created": "February 29, 2024 12:40:49 PM"
+    },
+    {
+      "id": "0422",
+      "title": "IPHONE 15 PRO MAX vs SAMSUNG GALAXY S23 ULTRA",
+      "body": "There's a lot to say about these two phones but it all comes down to preference 🤔",
+      "date_created": "February 29, 2024 12:42:23 PM"
+    }
+  ]
+}
