@@ -8,7 +8,13 @@ const NewBlog = ({
   setPostTitle,
   postBody,
   setPostBody,
+  file,
+  setFile,
 }) => {
+  const displayPostBody = () => {
+    // Render postBody content with line breaks
+    return { __html: postBody.replace(/\n/g, "<br>") };
+  };
   return (
     <motion.div
       className="formDaddy"
@@ -27,7 +33,7 @@ const NewBlog = ({
             value={postTitle}
             onChange={(e) => setPostTitle(e.target.value)}
             required
-          ></input>
+          />
           <label htmlFor="postBody">Post:</label>
           <textarea
             id="postBody"
@@ -35,15 +41,17 @@ const NewBlog = ({
             value={postBody}
             onChange={(e) => setPostBody(e.target.value)}
           />
+          <label htmlFor="file">Paste Image URL</label>
+          <input
+            type="url"
+            id="file"
+            onChange={(e) => setFile(e.target.value)}
+          />
           <button type="submit" className="submit">
-            <span className="circle1"></span>
-            <span className="circle2"></span>
-            <span className="circle3"></span>
-            <span className="circle4"></span>
-            <span className="circle5"></span>
-            <span className="text">Submit</span>
+            Submit
           </button>
         </form>
+        <div dangerouslySetInnerHTML={displayPostBody()} />
       </main>
     </motion.div>
   );

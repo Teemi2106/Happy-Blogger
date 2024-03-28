@@ -14,11 +14,12 @@ const SignIn = ({ userEmail, userpassword }) => {
     const password = document.getElementById("password").value;
 
     if (email === userEmail && password === userpassword) {
-      navigate("/Dashboard");
+      navigate("/blogs");
     } else {
       alert("Invalid Login");
     }
   };
+
   return (
     <motion.div
       className="div"
@@ -39,6 +40,7 @@ const SignIn = ({ userEmail, userpassword }) => {
             placeholder="E-mail"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
+            autoComplete="false"
           />
           <input
             required=""
@@ -49,6 +51,7 @@ const SignIn = ({ userEmail, userpassword }) => {
             placeholder="Password"
             value={passWord}
             onChange={(e) => setPassWord(e.target.value)}
+            autoComplete="false"
           />
           <span className="forgot-password">
             <Link to="#">Forgot Password</Link>

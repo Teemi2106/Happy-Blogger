@@ -122,3 +122,27 @@ li {
   font-weight: 600;
   color: white;
 }
+
+.section3 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url("https://assets-global.website-files.com/6425b3d54d3c3834d11bef95/6454cd14d6cf5d40a3229fff_one-on-one-meeting.png");
+
+  background-position-x: -20vmin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 3vmin;
+}
+
+.section3 div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+}

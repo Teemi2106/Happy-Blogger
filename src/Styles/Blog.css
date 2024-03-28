@@ -21,6 +21,7 @@ main {
 .content {
   min-height: 30vh;
   display: flex;
+  gap: 2vmin;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -120,6 +121,10 @@ input,
 textarea {
   font-size: 3.5vmin;
 }
+#file {
+  font-size: 2vmin;
+  height: 5vmin;
+}
 
 .submit {
   font-family: Arial, Helvetica, sans-serif;
@@ -173,4 +178,35 @@ textarea {
 .submit:hover span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
+}
+
+.edit {
+  padding: 1.5vmin 3vmin;
+  border-radius: 50px;
+  background: #0c66ed;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.edit:hover {
+  background-color: black;
+}
+.editForm {
+  height: 10vmin;
+  width: 100%;
+
+  padding: 1.5vmin 3vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#postBody {
+  height: 7vmin;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+.postImage {
+  max-width: 70%;
+  aspect-ratio: 3/2;
 }

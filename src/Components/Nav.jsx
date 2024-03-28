@@ -1,19 +1,10 @@
 import React, { useState } from "react";
 import "../Styles/nav.css";
 
-const Nav = ({ posts, setPosts }) => {
-  const [search, setSearch] = useState("");
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const filteredPosts = posts.filter((post) =>
-      post.title.toLowerCase().includes(search.toLowerCase())
-    );
-    setPosts(filteredPosts);
-  };
-
+const Nav = ({ search, setSearch }) => {
+  console.log(search);
   return (
-    <form className="navForm" onSubmit={handleSearch}>
+    <form className="navForm">
       <label className="navLabel" htmlFor="searchbox">
         Search
       </label>

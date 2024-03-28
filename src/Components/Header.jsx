@@ -5,7 +5,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleHome = () => {
-    navigate("/Dashboard");
+    navigate("/");
   };
   const handleBlog = () => {
     navigate("/blogs");
